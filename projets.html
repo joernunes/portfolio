@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - joelnunes</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="criativos" />
+<link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Configuração do Tailwind (para o CDN) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0a0e27',
+                        'secondary-bg': '#1a1f3a',
+                        'accent-blue': '#2563eb',
+                        'accent-cyan': '#06b6d4',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#94a3b8',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-primary': 'linear-gradient(135deg, #2563eb 0%, #06b6d4 100%)',
+                        'gradient-secondary': 'linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%)',
+                    },
+                    boxShadow: {
+                        'glow': '0 20px 40px rgba(37, 99, 235, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .bg-gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="bg-primary-bg">
+
+    <header class="bg-secondary-bg text-white overflow-hidden">
+        <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative z-10 flex items-center justify-between min-h-[100px] py-12">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold">
+                        My Projects
+                    </h1>
+                    <nav class="mt-2 text-sm text-white/80">
+                        <a href="index.html" class="hover:text-white">Home</a>
+                        <span class="mx-2">/</span>
+                        <span>My Projects</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20 md:py-28">
+        <section id="mais-projetos">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block border border-blue-600 text-blue-600 rounded-full px-5 py-2 text-sm font-semibold">
+                        Meus Projetos
+                    </span>
+                    <h2 class="text-4xl md:text-5xl text-white font-extrabold mt-4">
+                        Portfólio
+                    </h2>
+                </div>
+
+                <!-- Grid de Projetos -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card de Projeto 1 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Design de Aniversário" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                    <!-- Card de Projeto 2 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                    <!-- Card de Projeto 3 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Conferência" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                     <!-- Card de Projeto 4 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Trust Graphixs_</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-bg border-t border-white/10 py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <a href="index.html" class="text-3xl font-extrabold bg-gradient-primary bg-gradient-text inline-block mb-6">joelnunes</a>
+            <ul class="flex justify-center items-center space-x-8 mb-8">
+                <li><a href="index.html#home" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Início</a></li>
+                <li><a href="index.html#portfolio" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Portfólio</a></li>
+                <li><a href="index.html#about" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Sobre</a></li>
+                <li><a href="index.html#contact" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Contato</a></li>
+            </ul>
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="#" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="#" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-facebook text-2xl"></i></a>
+                <a href="#" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-behance text-2xl"></i></a>
+            </div>
+            <p class="text-text-secondary text-sm">© 2024 joelnunes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <img id="modalImg" src="" alt="Projeto Ampliado" class="max-h-[90vh] max-w-[90vw] object-contain rounded-lg shadow-2xl" />
+        <span id="closeModal" class="absolute top-4 right-6 text-white text-5xl font-bold cursor-pointer hover:text-gray-400 transition-colors">×</span>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- ============ SCRIPT CORRIGIDO ABAIXO ============ -->
+    <!-- =============================================== -->
+    <script>
+        // Seleciona os elementos do modal uma vez para melhor performance
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImg');
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Seleciona todos os CARDS de projeto
+        document.querySelectorAll('.grid .group').forEach(card => {
+            card.addEventListener('click', function () {
+                // Encontra a imagem DENTRO do card que foi clicado
+                const imageElement = this.querySelector('img');
+                
+                // Se encontrou uma imagem, abre o modal com o src dela
+                if (imageElement) {
+                    modalImage.src = imageElement.src;
+                    modal.classList.remove('hidden');
+                    document.body.classList.add('modal-open');
+                }
+            });
+        });
+
+        // Função para fechar o modal
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        // Eventos para fechar o modal
+        closeModalButton.addEventListener('click', closeModal);
+
+        // Fecha ao clicar fora da imagem (na área do modal)
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Fecha ao pressionar a tecla 'Escape'
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+</html>

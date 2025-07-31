@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Joel Nunes, designer gráfico especialista na criação de flyers para igrejas, aniversários e eventos. Transformando ideias em design visual impactante.">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="criativos" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
+<title>Designer | Joel Nunes</title>
+<meta name="title" content="Designer | Joel Nunes" />
+<meta name="description" content="Portfólio de Joel Nunes, designer gráfico especialista na criação de flyers para igrejas, aniversários e eventos. Transformando ideias em design visual impactante." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://criativospro.netlify.app/" />
+<meta property="og:title" content="Designer | Joel Nunes" />
+<meta property="og:description" content="Portfólio de Joel Nunes, designer gráfico especialista na criação de flyers para igrejas, aniversários e eventos. Transformando ideias em design visual impactante." />
+<meta property="og:image" content="https://files.on.adaptive.ai/cdn/LGgFM3WfUFDMNABGZ6ga6VrkhdhJDAZc-9-tcz-9-qejejblpywl.png" />
+
+<!-- X (Twitter) -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://criativospro.netlify.app/" />
+<meta property="twitter:title" content="Designer | Joel Nunes" />
+<meta property="twitter:description" content="Portfólio de Joel Nunes, designer gráfico especialista na criação de flyers para igrejas, aniversários e eventos. Transformando ideias em design visual impactante." />
+<meta property="twitter:image" content="https://files.on.adaptive.ai/cdn/LGgFM3WfUFDMNABGZ6ga6VrkhdhJDAZc-9-tcz-9-qejejblpywl.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- Tailwind CSS, Fontes e Ícones -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#0a0e27',
+                        'secondary-bg': '#1a1f3a',
+                        'accent-blue': '#2563eb',
+                        'accent-cyan': '#06b6d4',
+                        'text-primary': '#ffffff',
+                        'text-secondary': '#94a3b8',
+                    },
+                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                    backgroundImage: {
+                        'gradient-primary': 'linear-gradient(135deg, #2563eb 0%, #06b6d4 100%)',
+                        'gradient-secondary': 'linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%)',
+                    },
+                    boxShadow: { 'glow': '0 20px 40px rgba(37, 99, 235, 0.4)' }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Estilos personalizados gerais */
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .bg-gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body.modal-open { overflow: hidden; }
+
+        /* =============================================== */
+        /* ======== CÓDIGO CSS DO MODAL INSERIDO AQUI ======== */
+        /* =============================================== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background: var(--secondary-bg);
+            border-radius: 24px;
+            padding: 1.5rem;
+            max-width: 90vw;
+            max-height: 90vh;
+            width: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        #modalImage {
+            max-width: 100%;
+            max-height: 75vh;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 2001;
+        }
+        .close:hover {
+            background: rgba(0, 0, 0, 0.4);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body class="bg-primary-bg text-text-primary font-inter overflow-x-hidden">
+
+    <main>
+        <!-- Hero Section (sem alterações) -->
+        <section id="home" class="min-h-screen flex items-center justify-center p-4 text-center relative overflow-hidden">
+            <!-- ... conteúdo da seção hero ... -->
+             <div class="absolute inset-0 z-0 opacity-30">
+                <div class="absolute top-1/2 left-1/4 w-96 h-96 bg-accent-blue rounded-full filter blur-3xl animate-pulse"></div>
+                <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-accent-cyan rounded-full filter blur-3xl animate-pulse animation-delay-4000"></div>
+            </div>
+            <div class="z-10">
+                <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full text-sm text-text-secondary mb-8 backdrop-blur-sm">
+                    <i class="fas fa-palette text-accent-cyan"></i> Designer Gráfico Especialista
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    Olá, eu sou <span class="bg-gradient-primary bg-gradient-text">Joel Nunes</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-text-secondary mb-12">
+                    Transformo suas ideias em flyers e artes visuais que comunicam, inspiram e geram resultados.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projetos" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
+                        <i class="fas fa-folder-open"></i> Ver Meus Trabalhos
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-white/20 text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/10 hover:-translate-y-1">
+                        <i class="fas fa-paper-plane"></i> Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="inline-block border border-blue-600 text-blue-600 rounded-full px-5 py-2 text-sm font-semibold">
+                        Meus Projetos
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-4">Portfólio</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- =============================================== -->
+                    <!-- CARDS DE PROJETO ATUALIZADOS COM O ONCLICK -->
+                    <!-- =============================================== -->
+
+                    <!-- Card de Projeto 1 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer" 
+                         onclick="openModal('https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg', 'Design de Aniversário')">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Design de Aniversário" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Joel Graphixs_</h3>
+                        </div>
+                    </div>
+                    <!-- Card de Projeto 2 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                         onclick="openModal('https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg', 'Flyer de Evento')">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Evento" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white ">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Joel Graphixs_</h3>
+                        </div>
+                    </div>
+                    <!-- Card de Projeto 3 -->
+                    <div class="group relative block overflow-hidden rounded-xl shadow-lg cursor-pointer"
+                         onclick="openModal('https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg', 'Flyer de Conferência')">
+                        <img src="https://freepsdflyer.com/wp-content/uploads/2024/11/Birthday-Party-Event-Flyer-Template.jpg" alt="Flyer de Conferência" class="w-full h-full object-cover object-center transform transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <span class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">Outro Design</span>
+                            <h3 class="text-lg font-bold">Cortesia : Joel Graphixs_</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="projets.html" class="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300">
+                        Ver Mais »
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-32 bg-secondary-bg/50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="w-full max-w-md mx-auto">
+                        <img src="https://adaptive.ai/cdn/ZyaeGBnr2bdpgtZjUAHhDpxa4FCHEbyE.png" alt="Foto de Joel Nunes" class="rounded-3xl w-full h-full object-cover shadow-2xl">
+                    </div>
+                    <div>
+                        <span class="inline-block bg-gradient-secondary border border-accent-blue/20 px-4 py-2 rounded-full text-sm text-accent-blue font-semibold mb-4">
+                            Quem Sou Eu
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-primary bg-gradient-text">
+                            Prazer, sou Joel Nunes
+                        </h2>
+                        <p class="text-lg text-text-secondary mb-4">
+                            Sou um designer gráfico apaixonado por transformar mensagens em visuais impactantes. Minha missão é ajudar igrejas, organizadores de eventos e pessoas a comunicar suas ideias com clareza, beleza e profissionalismo.
+                        </p>
+                        <p class="text-lg text-text-secondary">
+                            Com foco em <span class="text-text-primary font-semibold">design de flyers</span>, cada projeto é uma oportunidade de contar uma história e criar uma conexão emocional com o público. Eu me dedico a entender sua visão e traduzi-la em uma arte que não apenas informa, mas também <span class="text-text-primary font-semibold">inspira e convida à ação</span>.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
+                                <i class="fas fa-handshake"></i>
+                                Vamos Trabalhar Juntos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="inline-block bg-gradient-secondary border border-accent-blue/20 px-4 py-2 rounded-full text-sm text-accent-blue font-semibold mb-4">
+                        Fale Comigo
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold">Entre em Contato</h2>
+                    <p class="max-w-2xl mx-auto text-lg text-text-secondary mt-4">
+                        Pronto para criar algo incrível? Me envie uma mensagem e vamos dar vida às suas ideias.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-start gap-6 bg-secondary-bg border border-white/10 rounded-2xl p-6">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                                <p class="text-text-secondary mb-4">A forma mais rápida de obter uma resposta.</p>
+                                <a href="https://wa.me/212715199504?text=Olá%20Joel,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank" class="font-semibold text-accent-cyan hover:underline">
+                                    Chamar no WhatsApp <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 bg-secondary-bg border border-white/10 rounded-2xl p-6">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Email</h3>
+                                <p class="text-text-secondary mb-4">Para consultas mais detalhadas.</p>
+                                <a href="mailto:nunesjoel324@gmail.com" class="font-semibold text-accent-cyan hover:underline">
+                                    nunesjoel324@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="bg-secondary-bg border border-white/10 rounded-2xl p-8 space-y-6" onsubmit="handleFormSubmit(event)">
+                        <h3 class="text-2xl font-bold">Ou Peça um Orçamento Rápido</h3>
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Seu Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Como devo te chamar?" required class="w-full bg-primary-bg border border-white/10 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-accent-blue transition-all">
+                        </div>
+                        <div>
+                            <label for="flyer-type" class="block text-sm font-semibold mb-2">Tipo de Arte</label>
+                            <select id="flyer-type" name="flyer-type" required class="w-full bg-primary-bg border border-white/10 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-accent-blue transition-all appearance-none">
+                                <option value="" disabled selected>Selecione o tipo</option>
+                                <option value="flyer_igreja">Flyer de Igreja</option>
+                                <option value="flyer_aniversario">Flyer de Aniversário</option>
+                                <option value="flyer_evento">Flyer de Evento</option>
+                                <option value="cardapio">Cardápio</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-2">Detalhes do Projeto</label>
+                            <textarea id="message" name="message" placeholder="Descreva sua ideia, tema, cores, textos e data do evento..." required rows="4" class="w-full bg-primary-bg border border-white/10 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-accent-blue transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-primary text-white font-semibold rounded-full transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
+                            <i class="fas fa-paper-plane"></i>
+                            Montar Mensagem para WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-bg border-t border-white/10 py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <a href="#home" class="text-3xl font-extrabold bg-gradient-primary bg-gradient-text inline-block mb-6">joelnunes</a>
+            <ul class="flex justify-center items-center space-x-8 mb-8">
+                <li><a href="#home" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Início</a></li>
+                <li><a href="#projetos" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Portfólio</a></li>
+                <li><a href="#about" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Sobre</a></li>
+                <li><a href="#contact" class="text-text-secondary hover:text-text-primary transition-colors duration-300">Contato</a></li>
+            </ul>
+            <div class="flex justify-center items-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/joernunes/" target="_blank" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="https://www.facebook.com/joernunes/" target="_blank" class="text-text-secondary hover:text-white transition-colors"><i class="fab fa-facebook text-2xl"></i></a>
+            </div>
+            <p class="text-text-secondary text-sm">© 2024 joelnunes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagem do Portfólio em tamanho maior">
+        </div>
+    </div>
+
+
+    <!-- =============================================== -->
+    <!-- ============ SCRIPT CORRIGIDO ABAIXO ============ -->
+    <!-- =============================================== -->
+    <script>
+        // Função para envio do formulário de contato (mantida do seu código)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const flyerType = formData.get('flyer-type');
+            const message = formData.get('message');
+            const selectedOption = event.target.querySelector('#flyer-type option:checked');
+            const typeText = selectedOption ? selectedOption.textContent : flyerType;
+            const whatsappMessage = `Olá Joel, meu nome é *${name}* 👋. Vim pelo seu site e gostaria de um orçamento.\n\n*Tipo de Arte:* ${typeText}\n*Detalhes:* ${message}\n\nAguardo seu contato!`;
+            const whatsappUrl = `https://wa.me/212715199504?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+         // Lógica do Modal
+         const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        
+        // Função para ABRIR o modal
+        function openModal(imageUrl, imageAlt) {
+            if (modal && modalImage) {
+                modalImage.src = imageUrl;
+                modalImage.alt = imageAlt || 'Imagem do Portfólio'; // Fallback para o alt text
+                modal.style.display = 'flex';
+                document.body.classList.add('modal-open');
+            }
+        }
+        
+        // Função para FECHAR o modal
+        function closeModal() {
+            if (modal) {
+                modal.style.display = 'none';
+                modalImage.src = ""; // Limpa o src para evitar carregar imagem desnecessariamente
+                document.body.classList.remove('modal-open');
+            }
+        }
+
+        // Fecha o modal se o usuário clicar no fundo (backdrop)
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Fecha o modal se o usuário pressionar a tecla 'Escape'
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
